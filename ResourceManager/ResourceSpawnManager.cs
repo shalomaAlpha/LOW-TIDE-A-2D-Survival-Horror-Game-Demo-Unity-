@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// This manager should be placed in the scene
-/// 1.Handle calling the resource spawner to spawn resources
+/// 1.Calling the resource spawner to spawn resources
 /// </summary>
 public class ResourceSpawnManager : MonoBehaviour
 {
@@ -30,7 +30,6 @@ public class ResourceSpawnManager : MonoBehaviour
         {
             foreach (ResourceSpawner spawner in resourceSpawners)
             {
-                Debug.Log("Function called"); //this part doesn't respon
                 spawner.SpawnResources();
             }
         }
@@ -40,3 +39,4 @@ public class ResourceSpawnManager : MonoBehaviour
         }
     }
 }
+
