@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Require: Placed in the Scene
+/// Required: Placed in the Scene
 /// Functionalities:
 /// 1.Calculate the cloest resource near player
-/// 2.Handle player loot resource
+/// 2.Handle player resource looting
 /// 3.Record resource Data in this scene
 /// 4.Pacake and return resources data 
-/// 5.Spawn resources according to record
+/// 5.Spawn resources according to the record
 /// </summary>
 public class ResourceManager : MonoBehaviour
 {
@@ -68,7 +68,7 @@ public class ResourceManager : MonoBehaviour
                     closest = resource;
                 }
             }
-            //Debug.Log(resources.Count + "in total");
+           
             if (nearestResource != closest)
             {
                 if (nearestResource != null)
@@ -163,3 +163,4 @@ public class ResourceData
         return amount;
     }
 }
+
